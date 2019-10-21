@@ -1,0 +1,47 @@
+import java.util.*;
+public class ChoosingWisely
+{
+public static void main(String args[])
+{
+	int mc,i,x,n,a,b,d,e;
+	int v[100], c[100];
+	System.out.println("Enter the value of n:");
+	Scanner sc= new Scanner(System.in);
+        n= sc.nextInt();
+	int pos=0;
+	System.out.println("Enter v array:");
+	for(i=0; i<n; i++)
+	{
+                v[i]= sc.nextInt();
+	
+	}
+	System.out.println("Enter c array:");
+	for(i=0; i<n; i++)
+	{
+		 c[i]= sc.nextInt();
+	
+	}
+		for(i=0; i<n; i++)
+		{
+		        System.out.println(v[i]);
+		}
+		for(i=0; i<n; i++)
+		{
+			System.out.println(v[i]);
+		}
+		for(i=0; i<n-1; i++)
+		{
+			if(c[i]>c[i+1])
+			{
+				pos=i;
+				a= c[pos];
+				b= c[pos-1];
+				d= v[pos];
+				e= v[pos-1];
+			}
+		}
+		mc= a+b;
+		System.out.println(mc);
+		x= d+e;
+		System.out.println(x);
+}
